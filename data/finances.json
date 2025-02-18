@@ -1,0 +1,28 @@
+{
+    "revenues": [
+        {
+            "name": "Corrida de Uber",
+            "value": 15.0,
+            "date": "18/02",
+            "category": "Transporte"
+        },
+        {
+            "name": "Venda de bolo",
+            "value": 25.0,
+            "date": "17/02",
+            "category": "Alimenta\u00e7\u00e3o"
+        },
+        {
+            "name": "Mouse Gamer",
+            "value": -150.0,
+            "date": "18/02",
+            "category": "Eletronicos"
+        },
+        {
+            "name": "Salario Fevereiro",
+            "value": 1800.0,
+            "date": "18/02",
+            "category": "Salario"
+        }
+    ]
+}

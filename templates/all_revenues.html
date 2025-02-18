@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Todas as Receitas</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for revenue in revenues %}
+        <tr>
+            <td>{{ revenue.name }}</td>
+            <td>R$ {{ revenue.value }}</td>
+            <td>{{ revenue.date }}</td>
+            <td>{{ revenue.category }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

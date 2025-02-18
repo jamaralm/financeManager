@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Manager</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Finance Manager</h1>
+        <nav>
+            <a href="/">Adicionar Receita</a>
+            <a href="/revenues">Ver Receitas</a>
+            <a href="/summary">Resumo</a>
+        </nav>
+        <div id="balance">Saldo: R$ {{ balance }}</div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Made by João Amaral</p>
+    </footer>
+</body>
+
+</html>

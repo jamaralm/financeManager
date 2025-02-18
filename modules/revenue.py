@@ -1,16 +1,21 @@
 import json
 from datetime import date
 
-globalJSONFilePath = 'data/data.json'
+globalJSONFilePath = 'data/finances.json'
 
 def loadData(filePath):
     try:
-        with open(filePath, 'r') as file:
-            return json.load(file)
-    except json.JSONDecodeError:
-        print('JSON DECODE ERROR')
-    except FileNotFoundError:
-        print('FILE NOT FOUND!')
+        with open(filePath, "r") as file:
+            data = json.load(file)
+            
+            # Se for uma lista, transforma em um dicionário válido
+            if isinstance(data, list):
+                return {"revenues": data}
+
+            # Se for um dicionário, retorna normalmente
+            return data
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {"revenues": []}
 
 def saveData(data):
     with open(globalJSONFilePath, 'w') as file:
@@ -28,5 +33,5 @@ def transformInputToJSON(name,value, date,category):
 def addRevenue(name, value, date, category):
     data = loadData(globalJSONFilePath)
     revenue = transformInputToJSON(name, value, date, category)
-    data.append(revenue)
+    data['revenues'].append(revenue)
     saveData(data)
