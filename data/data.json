@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Salario Fevereiro",
+        "value": 1500.0,
+        "date": "18-02-25",
+        "category": "Salario"
+    },
+    {
+        "name": "Conta Agua",
+        "value": -150.0,
+        "date": "18-02-25",
+        "category": "Despesas Domesticas"
+    },
+    {
+        "name": "Bonus Salarial",
+        "value": 500.0,
+        "date": "18-02-25",
+        "category": "Salario"
+    }
+]
