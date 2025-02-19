@@ -1,31 +1,131 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f8f9fa;
 }
 
-header {
+body, html {
+    height: 100%;
+}
+
+.nav-bar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #343a40;
+    position: relative;
+    background-color:rgb(52, 58, 64);
     color: white;
-    padding: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
 }
 
-nav a {
-    margin: 0 10px;
-    color: white;
+.nav-bar h1 {
+    font-size: 18px;
+}
+
+.nav-bar-right {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    padding-right: 24px;
+}
+
+nav a{
+    padding-right: 12px;
+}
+
+a {
     text-decoration: none;
-}
-
-#balance {
-    font-weight: bold;
+    color: white;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px; 
+    background-color: rgba(52, 58, 64, 0.2); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    margin: 12px;
+    flex-grow: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+.form h2 {
+    font-size: 22px; 
+    margin-bottom: 16px;  
+}
+
+.form div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    gap: 16px; 
+}
+
+.form label {
+    margin-bottom: 8px; 
+    font-size: 16px;
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;  
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;  
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #45a049;  
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: rgba(52, 58, 64, 0.27);
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 table {
@@ -41,9 +141,4 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
 }
