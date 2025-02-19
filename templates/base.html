@@ -3,28 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance Manager</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=13530&format=png&color=000000">
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
-    <header>
+
+    <header class="nav-bar">
         <h1>Finance Manager</h1>
-        <nav>
-            <a href="/">Adicionar Receita</a>
-            <a href="/revenues">Ver Receitas</a>
-            <a href="/summary">Resumo</a>
-        </nav>
-        <div id="balance">Saldo: R$ {{ balance }}</div>
+
+        <div class="nav-bar-right">
+            <nav>
+                <a href="/">Adicionar Receita</a>
+                <a href="/revenues">Ver Receitas</a>
+                <a href="/summary">Resumo</a>
+            </nav>
+
+            <div id="balance">Saldo: R$ {{ balance }}</div>
+        </div>
     </header>
 
     <main>
-        {% block content %}{% endblock %}
+        {% block content %} 
+        {% endblock %}
     </main>
 
     <footer>
         <p>Made by João Amaral</p>
     </footer>
+
 </body>
 
 </html>

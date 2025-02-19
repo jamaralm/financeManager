@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Resumo Financeiro</h2>
+    <section id="summary">
+        <h2>Resumo Financeiro</h2>
 
-<ul>
-    {% for item in summary %}
-    <li>{{ item }}</li>
-    {% endfor %}
-</ul>
-
+        <ul>
+            {% for item in summary %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </section>
 {% endblock %}
