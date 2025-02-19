@@ -21,7 +21,7 @@ def index():
         addRevenue(name, value, date, category)
         return redirect(url_for("index"))
 
-    return render_template("index.html")
+    return render_template("add_revenue.html")
 
 # Rota para exibir todas as receitas (showAll)
 @app.route("/revenues")
